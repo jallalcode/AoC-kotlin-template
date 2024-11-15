@@ -2,6 +2,17 @@
 
 Welcome to the **Advent of Code Kotlin Template**! This template is designed to streamline your setup process for each day’s challenge during Advent of Code. With automated day creation, organized file structure, and reusable utilities, you can focus more on solving the puzzles and less on setup.
 
+## Requirements
+
+This project requires:
+
+- **Kotlin**: Version 1.9.24
+- **JVM**: Java 8 or higher (The code targets Java 8 bytecode, so it can run on newer JVMs such as Java 11, Java 17, and Java 21).
+- **Gradle**: Version 8.0 or higher (The included Gradle wrapper ensures compatibility).
+
+If you’re using IntelliJ IDEA, verify your Project SDK by navigating to **File > Project Structure > Project SDK**. You can use the Gradle wrapper (`./gradlew`) to avoid needing a global Gradle installation.
+
+
 ## Getting Started
 
 This repository is a **template repository**. To use it as a base for your own Advent of Code solutions:
@@ -45,7 +56,9 @@ To create a new day with all the necessary files and structure:
 
 1. Open a terminal/powershell (or the integrated terminal on your IDE) and navigate to the root of the project.
 2. Run the following command, replacing X with the day number (e.g., 1 for Day 1)
-   ```.\createDay.ps1 -day X```
+   ```pwershell
+   .\createDay.ps1 -day X
+   ```
 This script will automatically:
 
 - Create a new folder for the day in src/main/kotlin and src/main/resources.
